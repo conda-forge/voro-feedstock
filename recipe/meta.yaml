@@ -12,7 +12,7 @@ source:
     - config.patch
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_compatible('voro', max_pin='x') }}
 
@@ -20,7 +20,7 @@ requirements:
   build:
     - {{ compiler('cxx') }}
     - make
-    - cmake  # [win]
+    - cmake
     - libtool  # [not win]
 
 test:

@@ -1,5 +1,5 @@
 mkdir build
 cd build
-cmake -G "Visual Studio 15 2019" ..
+cmake ..
 make
 make install
