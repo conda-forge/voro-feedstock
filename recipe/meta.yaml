@@ -21,13 +21,11 @@ requirements:
     - {{ compiler('cxx') }}
     - make
     - cmake
-    - libtool  # [not win]
 
 test:
   commands:
     - voro++ -h  # [not win]
     - voro++.exe -h  # [win]
-    - test -f "${PREFIX}/lib/libvoro++.a"  # [not win]
 about:
   home: https://github.com/chr1shr/{{ name }}
   license: LicenseRef-BSD-3-CLAUSE-VORO
