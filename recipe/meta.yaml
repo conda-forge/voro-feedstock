@@ -10,7 +10,6 @@ source:
   sha256: e1eb9c1f5a393604f2ca56e935b7e850644f7a3a18f5a85a5b2617f51fc70343
   patches:
     - config.patch
-    - cmake.patch
 
 build:
   number: 1
