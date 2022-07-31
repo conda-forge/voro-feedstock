@@ -12,22 +12,20 @@ source:
     - config.patch
 
 build:
-  number: 0
+  number: 1
   run_exports:
     - {{ pin_compatible('voro', max_pin='x') }}
-  skip: True  # [win]
 
 requirements:
   build:
     - {{ compiler('cxx') }}
     - make
-    - libtool  # [not win]
+    - cmake
 
 test:
   commands:
     - voro++ -h  # [not win]
     - voro++.exe -h  # [win]
-    - test -f "${PREFIX}/lib/libvoro++.a"  # [not win]
 about:
   home: https://github.com/chr1shr/{{ name }}
   license: LicenseRef-BSD-3-CLAUSE-VORO
