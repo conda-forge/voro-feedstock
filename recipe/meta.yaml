@@ -14,7 +14,7 @@ source:
 build:
   number: 0
   run_exports:
-    - {{ pin_compatible('voro', max_pin='x') }}
+    - {{ pin_subpackage('voro', max_pin='x') }}
   skip: True  # [win]
 
 requirements:
